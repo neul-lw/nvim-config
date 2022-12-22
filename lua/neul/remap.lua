@@ -52,3 +52,9 @@ set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Make it execuatable
 set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- Quickfix should learn about it first
+--set("n", "<C-k>", "<cmd>cnext<CR>zz")
+--set("n", "<C-j>", "<cmd>cprev<CR>zz")
+--set("n", "<leader>k", "<cmd>lnext<CR>zz")
+--set("n", "<leader>j", "<cmd>lprev<CR>zz")
