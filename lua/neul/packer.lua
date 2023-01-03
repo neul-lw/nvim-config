@@ -24,7 +24,8 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     }
-  -- Autocompletion
+
+ -- Autocompletion
   use {
         {'hrsh7th/nvim-cmp'},
   	    {'hrsh7th/cmp-buffer'},
@@ -57,7 +58,3 @@ return require('packer').startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 end)
-
-
-
-

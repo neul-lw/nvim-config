@@ -85,6 +85,7 @@ set('n', '<leader>gs', vim.cmd.Git)
 
 
 -- Lsp 
+local opts = { noremap = true, silent = true }
 set("n", "gd", vim.lsp.buf.definition, opts)
 set("n", "K", vim.lsp.buf.hover, opts)
 set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
