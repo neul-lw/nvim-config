@@ -45,13 +45,59 @@ set({"n", "v"}, "<leader>y", [["+y]])
 set("n", "<leader>Y", [["+Y]])
 
 -- Fast project changing 
-set("n", "<C f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- Change current all 
 set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Make it execuatable
 set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- Run a python file 
+set("n", "<leader>;p", "<cmd>term python3 %<CR>")
+
+-- Code runner 
+set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
+set('n', '<leader>rf', ':RunFile<CR>', { noremap = true, silent = false })
+set('n', '<leader>rft', ':RunFile tab<CR>', { noremap = true, silent = false })
+set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
+set('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
+set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
+set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
+
+-- Fugutive
+set('n', '<leader>gs', vim.cmd.Git)
+
+-- Harpoon 
+-- set("n", "<leader>a", mark.add_file)
+-- set("n", "<C-e>", ui.toggle_quick_menu)
+-- 
+-- set("n", "<C-h>", function() ui.nav_file(1) end)
+-- set("n", "<C-t>", function() ui.nav_file(2) end)
+-- set("n", "<C-n>", function() ui.nav_file(3) end)
+-- set("n", "<C-s>", function() ui.nav_file(4) end)
+-- 
+-- Treesitter 
+--          init_selection = '<C-space>',
+--          node_incremental = '<C-space>',
+--          scope_incremental = '<C-s>',
+--          node_decremental = '<C-backspace>',
+
+
+-- Lsp 
+set("n", "gd", vim.lsp.buf.definition, opts)
+set("n", "K", vim.lsp.buf.hover, opts)
+set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
+set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+set("n", "[d", vim.diagnostic.goto_next, opts)
+set("n", "]d", vim.diagnostic.goto_prev, opts)
+set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
+set("n", "<leader>vrr", vim.lsp.buf.references, opts)
+set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
+set("i", "<C-k>", vim.lsp.buf.signature_help, opts)
+
+-- Undotree 
+set('n', '<leader>u', vim.cmd.UndotreeToggle)
 
 -- Quickfix should learn about it first
 --set("n", "<C-k>", "<cmd>cnext<CR>zz")
