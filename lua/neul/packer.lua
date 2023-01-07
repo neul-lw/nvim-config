@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
 
   -- Lsp and Mason 
-  use{ 
+  use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
@@ -37,13 +37,12 @@ return require('packer').startup(function(use)
     }
 
   -- Snippets
-  use { 
+  use {
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
     }
 
   use('mfussenegger/nvim-dap')
-  use('andreasvc/vim-256noir')
   use{
       'nvim-tree/nvim-tree.lua',
       requires = {
@@ -57,4 +56,6 @@ return require('packer').startup(function(use)
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use ('jose-elias-alvarez/null-ls.nvim')
+  use ("ray-x/lsp_signature.nvim")
 end)

@@ -6,3 +6,4 @@ end
 require "neul.lsp.mason"
 require("neul.lsp.handlers").setup()
 require "neul.lsp.null-ls"
+require("neul.lsp.settings.jedi-language-server")
