@@ -26,10 +26,12 @@ set.signcolumn = "yes"
 set.foldcolumn = "0"
 set.colorcolumn = "80"
 vim.cmd("set fillchars+=vert:\\ ")
-set.cc =
+set.cc = '' 
 
 set.isfname:append("@-@")
 set.updatetime = 50
 
 set.splitright = true
 set.splitbelow = true
+
+

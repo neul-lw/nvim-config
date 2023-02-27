@@ -1,5 +1,7 @@
 local servers = {
-	"sumneko_lua",
+	--"lua-language-server",
+    --"jedi-language-server",
+    "clangd",
 	-- "cssls",
 	-- "html",
 	-- "tsserver",

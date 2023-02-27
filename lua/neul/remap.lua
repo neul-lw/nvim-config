@@ -1,15 +1,19 @@
 local set = vim.keymap.set
 
 vim.g.mapleader = " "
-set("n", "<leader>pp", vim.cmd.Ex)
 set("i", "jj", "<C-c>")
 set("n", '<leader>w', vim.cmd.w)
 set("n", '<leader>q', vim.cmd.q)
 set("n", '<leader>so', vim.cmd.so)
+set("n", "<leader>cs", vim.cmd.noh)
+-- Make it execuatable
+set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 
 -- Nvim-tree keymaps 
 set("n", "<leader>e", vim.cmd.NvimTreeToggle)
+
+-- Moving 
 set("n", "<leader>h", "<C-w>h")
 set("n", "<leader>l", "<C-w>l")
 set("n", "<leader>j", "<C-w>j")
@@ -25,10 +29,11 @@ set("n", "<C-Right>", ":vertical resize -2<CR>")
 set("n", "<S-l>", ":bnext<CR>")
 set("n", "<S-h>", ":bprevious<CR>")
 
-
 -- Move text up and down
 set("v", "J", ":m '>+1<CR>gv=gv")
 set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Move and create a space after every line 
 set("v", "<leader>p.", '"_dP')
 
 -- Visual --
@@ -50,12 +55,6 @@ set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 -- Change current all 
 set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- Make it execuatable
-set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
--- Run a python file 
-set("n", "<leader>;p", "<cmd>term python3 %<CR>")
-
 -- Code runner 
 set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })
 set('n', '<leader>rf', ':RunFile<CR>', { noremap = true, silent = false })
@@ -72,8 +71,8 @@ set('n', '<leader>gs', vim.cmd.Git)
 -- set("n", "<leader>a", mark.add_file)
 -- set("n", "<C-e>", ui.toggle_quick_menu)
 -- 
--- set("n", "<C-h>", function() ui.nav_file(1) end)
--- set("n", "<C-t>", function() ui.nav_file(2) end)
+-- set("n", "<C-t>", function() ui.nav_file(1) end)
+-- set("n", "<C-g>", function() ui.nav_file(2) end)
 -- set("n", "<C-n>", function() ui.nav_file(3) end)
 -- set("n", "<C-s>", function() ui.nav_file(4) end)
 -- 

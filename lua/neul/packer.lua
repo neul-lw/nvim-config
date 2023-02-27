@@ -4,7 +4,6 @@
 vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
   use {
@@ -58,4 +57,10 @@ return require('packer').startup(function(use)
   }
   use ('jose-elias-alvarez/null-ls.nvim')
   use ("ray-x/lsp_signature.nvim")
+  -- Colorschemes
+  use ('catppuccin/nvim')
+  use ("EdenEast/nightfox.nvim")
+  use ("rose-pine/neovim")
+  use {'nyoom-engineering/oxocarbon.nvim'}
+  use ("olimorris/onedarkpro.nvim")
 end)

@@ -119,20 +119,10 @@ _G.packer_plugins = {
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/home/neul/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   harpoon = {
     loaded = true,
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
-  },
-  ["leaf.nvim"] = {
-    loaded = true,
-    path = "/home/neul/.local/share/nvim/site/pack/packer/start/leaf.nvim",
-    url = "https://github.com/daschw/leaf.nvim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,
@@ -154,10 +144,25 @@ _G.packer_plugins = {
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neovim = {
+    loaded = true,
+    path = "/home/neul/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/neul/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
+  nvim = {
+    loaded = true,
+    path = "/home/neul/.local/share/nvim/site/pack/packer/start/nvim",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -189,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/home/neul/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -213,11 +223,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/neul/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-256noir"] = {
-    loaded = true,
-    path = "/home/neul/.local/share/nvim/site/pack/packer/start/vim-256noir",
-    url = "https://github.com/andreasvc/vim-256noir"
   },
   ["vim-fugitive"] = {
     loaded = true,
