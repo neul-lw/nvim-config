@@ -63,4 +63,5 @@ return require('packer').startup(function(use)
   use ("rose-pine/neovim")
   use {'nyoom-engineering/oxocarbon.nvim'}
   use ("olimorris/onedarkpro.nvim")
+
 end)

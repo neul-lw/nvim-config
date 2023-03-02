@@ -3,7 +3,7 @@ vim.o.termguicolors = true
 require("onedarkpro").setup({
   colors = {
     cyan = '#a965fc',
-    blue = '#fd96a8',
+    blue = '#814dfa',
     green = '#eaa580',
   }
 })
