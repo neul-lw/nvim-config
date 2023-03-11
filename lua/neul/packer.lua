@@ -63,5 +63,11 @@ return require('packer').startup(function(use)
   use ("rose-pine/neovim")
   use {'nyoom-engineering/oxocarbon.nvim'}
   use ("olimorris/onedarkpro.nvim")
-
+  use {
+      'phaazon/hop.nvim',
+      branch = 'v2', -- optional but strongly recommended
+      config = function()
+        -- you can configure Hop the way you like here; see :h hop-config
+      end
+        }
 end)
